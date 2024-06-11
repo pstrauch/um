@@ -5,6 +5,8 @@ UM - A crisper, customized version of man.
 
 ## Installation
 
+Start by cloning this repository to your device.
+
 Make the install script executable and run it:
 ```bash
 chmod +x install
