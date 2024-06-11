@@ -4,7 +4,7 @@
 
 - The entries are written in .man files which can be executed in the CL via `man ./path/to/manfile.man`
 - All entries which can be accessed by this application are located in `~/.local/share/um/`.
-- The 'um' application script is located in `~/.local/bin/
+- The 'um' application script is located in `~/.local/bin/`
 
 
 ## Bash
