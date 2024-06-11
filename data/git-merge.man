@@ -1,0 +1,31 @@
+.TH git-merge "May 2024" "Version 1.0" "User Commands"
+.SH NAME
+git merge \- Join development histories.
+.SH SYNOPSIS
+\fBgit merge\fR 
+.br
+\fBgit merge\fR [option...] <commit>
+.br
+\fBgit merge\fR (--continue | --abort | --quit)
+.SH DESCRIPTION
+TODO
+.SH COMMANDS
+.TP
+\fBgit merge\fR 
+Merge the upstream branch into the current branch. (Note: Any changes on the remote must be fetched first. See git-fetch and git-pull.)
+.TP
+\fBgit merge\fR <commit>
+Merge <commit> into the current branch.
+.TP
+\fBgit merge\fR (--continue | --abort | --quit)
+Specify an action when a merge is already in progress.
+.SH OPTIONS
+.TP
+--commit, --no-commit
+Perform or stop before commiting after a merge. Note, this will not be invoked on a --ff merge, since no commit is added.
+.TP
+-e, --edit, --no-edit
+Invoke editor before comitting to edit the auto-generated merge message.
+.TP
+--ff, --no-ff, --ff-only
+Specify how a merge is handled when the merged-in history is already a descendant of the current history.

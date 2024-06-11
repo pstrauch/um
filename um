@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# path to the manual entries
+DATA="$HOME/.local/share/um/"
+
+# write a function
+function usage {
+  printf "\033[1mUsage:\033[0m\n"
+  printf "\tum (<entry>|<command>)\n"
+  printf "\033[1mCommands:\033[0m\n"
+  printf "\tlist\n"
+  printf "\thelp, --help\n"
+}
+
+# Check if any arguments are passed
+if [ "$#" -eq 0 ]; then
+    echo "Missing argument."
+    usage
+    exit 1
+fi
+
+entry="$1"
+
+# check if the entry is a command
+if [ "$entry" = "list" ]; then
+  ls -1 "$DATA" | sed 's/\.man$//'
+  exit 0
+fi
+# check if entry is help or --help
+if [ "$entry" = "help" ] || [ "$entry" = "--help" ]; then
+  printf "\033[1mUser Manual\033[0m - a crisper, customized version of man.\n\n"
+  usage
+  printf "\nConfigured directory for manual entries: $DATA\n"
+  exit 0
+fi
+
+# parse the entry: concatenate all arguments separated by a hyphen
+shift
+for arg in "$@"; do
+  entry="${entry}-$arg"
+done
+
+# show the manual entry if it exists
+file="${entry}.man"
+if [ -f "$DATA$file" ]; then
+    man -l "$DATA$file"
+else
+  echo "Unknown command '$entry'."
+  echo "No entry found for '$entry'."
+  usage
+  exit 1
+fi

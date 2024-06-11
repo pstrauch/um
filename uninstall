@@ -1,0 +1,13 @@
+#!/bin/bash
+
+printf "Uninstalling User Manual...\n\n"
+
+# Remove the directory ~/.local/share/um/
+echo "- Removing user manuals from ~/.local/share/um/"
+rm -rf "$HOME/.local/share/um/"
+
+# Remove the file ~/.local/bin/um
+echo "- Removing um from ~/.local/bin/"
+rm -f "$HOME/.local/bin/um"
+
+printf "\n\033[1mUser Manual successfully uninstalled from the system!\033[0m\n"

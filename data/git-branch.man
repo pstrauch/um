@@ -1,0 +1,32 @@
+.TH git-branch "May 2024" "Version 1.0" "User Commands"
+.SH NAME
+git branch \- Manage git branches
+.SH SYNOPSIS
+\fBgit branch\fR 
+.br
+\fBgit branch <branchname>\fR 
+.br
+\fBgit branch -m <oldbranch> <newbranch>\fR
+.br
+\fBgit branch -d <branchname>\fR
+.SH DESCRIPTION
+.TP
+\fBgit branch\fR 
+List existing branches.
+.TP
+\fBgit branch <branchname>\fR 
+Create a new branch.
+.TP
+\fBgit branch -m <oldbranch> <newbranch>\fR 
+Rename/move a branch.
+.TP
+\fBgit branch -d <branchname>\fR
+Delete a branch.
+.TP
+TODO
+deleting remote branches - handle deletion of remote branch.
+.SH NOTES
+Further useful commands for branches:
+.TP
+\fBgit checkout\fR --track <remote>/<branchname>
+Create a new branch according to a remote branch. The new branch automatically tracks the remote branch (see git remote show <remote>)

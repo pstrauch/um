@@ -1,0 +1,11 @@
+.TH ros2-bag "June 2024" "Version 1.0" "User Commands"
+.SH NAME
+ros2 bag \- Log ROS2 data.
+.SH SYNOPSIS
+\fBros2 bag\fR <command> [<args>]
+.br
+\fBros2 bag record\fR [-o <path>] </topic_name_1> </topic_name_2>
+.br
+\fBros2 bag info\fR <path>
+.br
+\fBros2 bag play\fR <path>

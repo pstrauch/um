@@ -1,0 +1,35 @@
+.TH git-log "May 2024" "Version 1.0" "User Commands"
+.SH NAME
+git log \- Show commit logs
+.SH SYNOPSIS
+\fBgit log\fR [<options>]
+.SH FORMAT OPTIONS
+.TP
+--oneline
+Show each commit log on one line.
+.TP
+--graph
+Show a commit graph.
+.TP
+--decorate
+Display all references for each commit.
+.SH OPTIONS
+.TP
+--all
+Show logs of all references.
+.TP
+-<n>
+Only show the latest <n> commits.
+.TP
+--merges, --no-merges
+Only show commits from merges.
+.TP
+--grep="<search_string>"
+Search for commits containing <search_string> in their message.
+.TP
+--author="(<username>|<email>)"
+Filter commits by <username> or <email>.
+.br
+It is possible to use the OR operator through --author="<user1>\\|<user2>".
+.SH SEE ALSO
+To display logs of specific commits, refer to \fBgit show\fR.

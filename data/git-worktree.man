@@ -1,0 +1,38 @@
+.TH git-worktree "May 2024" "Version 1.0" "User Commands"
+.SH NAME
+git worktree \- Manage git working trees
+.SH SYNOPSIS
+\fBgit worktree\fR <command> [<args>]
+.br
+\fBgit worktree list\fR
+.br
+\fBgit worktree add\fR [-b <new-branch>] <path> [<commit-ish>]
+.br
+\fBgit worktree remove\fR <path>
+.SH DESCRIPTION
+Manage working trees attached to the same repository.
+.SH COMMANDS
+.TP
+\fBlist\fR
+List the currently configured worktrees.
+.TP
+\fBadd\fR <path> [<branch>]
+Create a new worktree and checkout <commit-ish> into it.
+.br
+If a branch is specified which only exists on a single remote, git creates a local branch which tracks the remote branch.
+.br
+If <commit-ish> is omitted, and -b isn't used, the new worktree is associated with a branch according to the path.
+.TP
+\fBremove\fR <path>
+Remove a configured worktree.
+.br
+.B NOTE: 
+Always remove a worktree from the main repository and never just delete the worktree folder.
+.SH OPTIONS
+.TP
+-b <new-branch>
+Create a new branch named \fB<new-branch>\fR starting at \fB<commit-ish>\fR and check it out. 
+.br
+If \fB<commit-ish>\fR is omitted, it defaults to HEAD. 
+.br
+By default, it refuses to create a new branch if it already exists.

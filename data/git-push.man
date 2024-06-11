@@ -1,0 +1,14 @@
+.TH git-push "May 2024" "Version 1.0" "User Commands"
+.SH NAME
+git push \- Update remote references.
+.SH SYNOPSIS
+\fBgit push\fR
+.br
+\fBgit push\fR <remote> <local_branch>[:<remote_branch>]
+.SH DESCRIPTION
+.TP
+\fBgit push\fR
+Push local changes to all configured remote branches.
+.TP
+\fBgit push\fR <remote> <local_branch>[:<remote_branch>]
+Push commited changes in <local_branch> to <remote_branch> of <remote>. If <remote_branch> is omitted, it will push to the configured remote branch.

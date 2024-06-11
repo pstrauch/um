@@ -1,0 +1,22 @@
+#!/bin/bash
+
+printf "Installing User Manual...\n\n"
+
+# Create the directory ~/.local/share/um/ if it doesn't exist
+echo "- Creating data directory ~/.local/share/um/"
+mkdir -p "$HOME/.local/share/um/"
+
+# Copy and overwrite the user manuals to ~/.local/share/um/
+echo "- Copying user manuals to ~/.local/share/um/"
+cp -f ./data/* "$HOME/.local/share/um/"
+
+# Make um executable
+echo "- Making um executable"
+chmod +x um
+
+# Copy um to ~/.local/bin
+echo "- Copying um to ~/.local/bin/"
+cp -f um "$HOME/.local/bin/"
+
+printf "\n\033[1mUser Manual installed successfully!\033[0m\n"
+echo "Run 'um help' to get started."

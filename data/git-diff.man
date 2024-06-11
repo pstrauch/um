@@ -1,0 +1,45 @@
+.TH git-diff "May 2024" "Version 1.0" "User Commands"
+.SH NAME
+git diff \- Show changes between commits
+.SH SYNOPSIS
+\fBgit diff\fR [<commit>] [<path>...]
+.br
+\fBgit diff\fR <commit> [<path>...]
+.br
+\fBgit diff\fR <commit> <commit> [<path>...]
+.br
+\fBgit diff\fR {--cached|--staged} [<commit>] [<path>...]
+.br
+\fBgit diff\fR --no-index <path> <path>
+.SH DESCRIPTION
+.TP
+\fBgit diff\fR [<path>...]
+View current changes relative to the index (staging area).
+.TP
+\fBgit diff\fR <commit> [<path>...]
+View changes in working tree (staged and unstaged) relative to \fB<commit>\fR.
+.TP
+\fBgit diff\fR <commit> <commit> [<path>...]
+Compare two commits.
+.TP
+\fBgit diff\fR {--cached|--staged} [<commit>] [<path>...]
+View staged changes relative to \fB<commit>\fR. If \fB<commit>\fR is omitted, it defaults to HEAD.
+.TP
+\fBgit diff\fR --no-index <path> <path>
+Compare two files.
+.SH OPTIONS
+.TP
+\fB<commit>\fR
+Specify a commit. The branch can also be specified using \fB<branch>[/<commit>]\fR.
+.TP
+\fB<path>\fR
+Specify a file in which to view the changes.
+.TP
+--color-words
+Directly show edited lines by highlighting the changed words in color.
+.TP
+-b, --ignore-space-change
+.TP
+-w, --ignore-all-space
+.TP
+--ignore-blank-lines

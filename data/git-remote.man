@@ -1,0 +1,13 @@
+.TH git-remote "May 2024" "Version 1.0" "User Commands"
+.SH NAME
+git remote \- Managing git remotes.
+.SH SYNOPSIS
+\fBgit remote\fR [<options>]
+.br
+\fBgit remote add\fR  <name> <url>
+.SH OPTIONS
+.TP
+-v
+List the configured remotes.
+.SH SEE ALSO
+\fBgit clone\fR to copy and track a remote repository directly.
