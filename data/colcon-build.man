@@ -1,0 +1,15 @@
+.TH git-branch "Nov 2024" "Version 1.0" "User Commands"
+.SH NAME
+colcon build \- Build ROS2 packages with colcon.
+.SH SYNOPSIS
+\fBcolcon build\fR [options]
+.br
+\fBcolcon build\fR --packages-select <package_1> <package_2> --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
+.SH DESCRIPTION
+.TP
+\fBcolcon build\fR 
+Build all packages of the current working directory.
+.SH OPTIONS
+.TP
+--symlink-install
+TODO: Description
