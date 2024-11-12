@@ -1,0 +1,34 @@
+.TH tmux "Nov 2024" "Version 1.0" "User Commands"
+.SH NAME
+tmux \- Terminal Multiplexer Quickreference
+.SH SESSIONS
+.TP
+\fBtmux ls\fR
+List currently running sessions.
+.TP
+\fBtmux new\fR -s <session_name>
+Create a new session with a specified name.
+.TP
+\fBtmux a\fR -t <session_name>
+Attach to running session.
+.TP
+\fBtmux kill-ses\fR -t <session_name>
+Kill session.
+.SH PANES
+.TP
+\fBCtl+b <h|v>\fR 
+Split current pane horizontally/vertically. (Legacy: %|")
+.TP
+\fBCtl+b <up|down|left|right>\fR 
+Navigate panes.
+.TP
+\fBCtl+b q\fR [number]
+Show pane numbers or select one by its number.
+.TP
+\fBCtl+b x\fR 
+Kill current pane (acknowledge with y).
+.SH MISC
+.TP
+\fBCtl+b\fR Default bind-key in tmux.
+.TP
+Custom configurations (e.g. keybinds) stored in ~/.tmux.conf
