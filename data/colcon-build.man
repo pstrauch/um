@@ -1,4 +1,4 @@
-.TH git-branch "Nov 2024" "Version 1.0" "User Commands"
+.TH colcon-build "Nov 2024" "Version 1.0" "User Commands"
 .SH NAME
 colcon build \- Build ROS2 packages with colcon.
 .SH SYNOPSIS
