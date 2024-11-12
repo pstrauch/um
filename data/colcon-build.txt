@@ -1,0 +1,4 @@
+\033[1mcolcon build\033[0m - Build ROS2 packages with colcon.\n
+SYNOPSIS\n
+colcon build [options]\n
+colcon build --packages-select <package_1> <package_2> --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
