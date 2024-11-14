@@ -1,13 +1,20 @@
-.TH git-remote "May 2024" "Version 1.0" "User Commands"
+.TH git-submodule "November 2024" "Version 1.0" "User Commands"
 .SH NAME
-git remote \- Managing git remotes.
+git submodule \- Managing git submodules.
 .SH SYNOPSIS
-\fBgit remote\fR [<options>]
+\fBgit submodule add\fR [<options>]
 .br
-\fBgit remote add\fR  <name> <url>
-.SH OPTIONS
+\fBgit submodule init\fR [<options>]
+.br
+\fBgit submodule update\fR [--remote] [<options>]
+.br
+tbd
+.SH WORKFLOW
 .TP
--v
-List the configured remotes.
-.SH SEE ALSO
-\fBgit clone\fR to copy and track a remote repository directly.
+tbd
+.SH FILE .gitmodules
+.TP
+You can specify submodule parameters in the .gitmodules file. 
+.TP
+branch = <branchname> 
+Allows to specify the branch. Then, run `git submodule update --remote` to update the registry.
