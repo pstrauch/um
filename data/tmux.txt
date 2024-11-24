@@ -1,0 +1,6 @@
+\033[1mcolcon build\033[0m - Terminal Multiplexer Quickreference\n
+SESSIONS\n
+tmux ls \n\tList currently running sessions.\n
+tmux new -s <session_name> \n\tCreate a new session with a specified name.\n
+tmux a -t <session_name> \n\tAttach to running session.\n
+tmux kill-ses -t <session_name> \n\tKill session.
