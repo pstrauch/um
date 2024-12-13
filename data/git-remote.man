@@ -13,4 +13,9 @@ List the configured remotes.
 -vv
 tbd
 .SH SEE ALSO
-\fBgit clone\fR to copy and track a remote repository directly.
+.TP
+\fBgit clone\fR 
+Copy and track a remote repository directly.
+.TP
+\fBgit fetch\fR --prune
+Delete references to a deleted remote branch.

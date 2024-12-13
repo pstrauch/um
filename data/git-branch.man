@@ -30,3 +30,6 @@ Create a new branch according to a remote branch. The new branch automatically t
 .TP
 \fBgit push\fR -d <remote> <branchname>
 Delete a remote branch. The local branch can be deleted separately using the standard method.
+.TP
+\fBgit fetch\fR --prune
+Delete references to a deleted remote branch.
