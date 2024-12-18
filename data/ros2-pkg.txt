@@ -1,0 +1,4 @@
+\033[1mros2 pkg\033[0m - Manage ROS2 packages.\n
+SYNOPSIS\n
+ros2 pkg create <package_name>\n
+ros2 pkg create <package_name> --build-type ament_cmake --dependencies rclcpp\n

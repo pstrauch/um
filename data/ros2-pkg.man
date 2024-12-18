@@ -1,0 +1,14 @@
+.TH ros2-pkg "Dec 2024" "Version 1.0" "User Commands"
+.SH NAME
+ros2 pkg \- Manage ROS2 packages.
+.SH SYNOPSIS
+\fBros2 pkg create\fR <package_name>
+.br
+\fBros2 pkg create\fR <package_name> --build-type ament_cmake --dependencies rclcpp
+.SH OPTIONS
+.TP
+--build-type <build_type>
+Specify the build type of the package.
+.TP
+--dependencies <dependencies>
+Specify dependencies of the package (e.g. rclcpp).
