@@ -1,0 +1,31 @@
+.TH ssh-keygen "Mar 2025" "Version 1.0" "User Commands"
+.SH NAME
+ssh-keygen \- Manage ssh keys
+.SH Generate an SSH key pair
+.TP
+\fBssh-keygen\fR -t ed25519 -f $HOME/.ssh/id_ed25519_<id> -C "<comment>"
+.SH OPTIONS
+.TP
+-t
+Choose protocol
+.TP
+-f
+Choose file path
+.TP
+-C
+Add a comment
+.SH NOTES
+.TP
+ssh-copy-id -i <path/to/ssh_pub_key>.pub <username>@<remote>
+For copying the public key to the remote (and avoiding password login)
+.TP
+~/.ssh/config
+Store host address and username
+.TP
+/etc/hosts
+Store host information
+.TP
+xclip -sel clip < <path/to/ssh_pub_key>.pub
+Copy the contents of the public key to the clipboard
+.TP
+Note: If you don't use the default filename, you might have to add it to the ssh-agent or configure it in .ssh/config.
