@@ -12,6 +12,9 @@ Create a new session with a specified name.
 \fBtmux a\fR -t <session_name>
 Attach to running session.
 .TP
+\fBtmux d\fR
+Detach from current session.
+.TP
 \fBtmux kill-ses\fR -t <session_name>
 Kill session.
 .SH PANES
