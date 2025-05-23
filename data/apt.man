@@ -1,0 +1,28 @@
+.TH tmux "May 2025" "Version 1.0" "User Commands"
+.SH NAME
+apt \- Advanced Packaging Tool
+.SH COMMANDS
+.TP
+\fBsudo apt update\fR
+Update list of available packages.
+.TP
+\fBsudo apt uprade\fR
+Upgrade the system by installing/upgrading packages.
+.TP
+\fBsudo apt autoremove\fR
+Automatically remove all unused packages.
+.TP
+\fBsudo apt install <package>\fR
+Install the specified package.
+.TP
+\fBsudo apt remove <package>\fR
+Remove the specified package.
+.TP
+\fBsudo apt list [--installed]\fR
+List the (installed packages). See also: dpkg -l.
+.TP
+\fBsudo apt search\fR
+.SH SEE ALSO
+.TP
+\fBdpkg\fR [-l]
+Basic package management tool.
