@@ -1,0 +1,37 @@
+.TH docker "May 2025" "Version 1.0" "User Commands"
+.SH NAME
+docker \- Package software in containers to run reliably in any environment.
+.SH COMMANDS
+.TP
+\fBdocker ps\fR [-a]
+List running (all) containers.
+.TP
+\fBdocker images\fR
+List images.
+.TP
+\fBdocker build -t <image_tag> <path/to/Dockerfile/dir>\fR
+Build a docker image.
+.br
+Note: Path to Dockerfile directory (excluding /Dockerfile).
+.br
+<image_tag> format: username/app_tag:VERSION
+.TP
+\fBdocker run <image> [options]\fR
+Run a container.
+.TP
+\fBdocker run -it <image> /bin/bash\fR
+Run a container in interactive mode.
+.br
+-i: --interactive
+.br
+-t: --tty (input mode)
+.br
+/bin/bash: what to run in the container
+.TP
+\fBdocker stop <container>\fR
+.TP
+\fBdocker rmi [-f]\fR
+Remove an image.
+.TP
+\fBdocker system prune\fR
+Cleanup unused resources.
