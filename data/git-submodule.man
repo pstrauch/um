@@ -6,10 +6,29 @@ git submodule \- Managing git submodules.
 .br
 \fBgit submodule init\fR [<options>]
 .br
-\fBgit submodule update\fR [--remote] [<options>]
+\fBgit submodule update\fR [--init] [--recursive] [--remote] [<options>]
 .br
-tbd
-.SH WORKFLOW
+.SH COMMANDS
+.TP
+\fBgit submodule init\fR [<options>]
+Configure the submmodules (register their commits in the config file). The submodules are not loaded.
+.TP
+\fBgit submodule update\fR [--init] [--recursive] [--remote] [<options>]
+Update/Load the submodules to checkout the configured commit.
+.TP
+--init 
+Initialize and update the submodules in one step (useful when initializing a new repository).
+.TP
+--remote
+Checks out the latest commit in the configured (remote) branch (instead of the configured exact commit).
+.SH INITIALIZATION
+.TP
+\fBgit submodule update --init --recursive\fR [--remote]
+Initialize and update the submodules in one command. Run this command when initializing the submodules in a new repository.
+.TP
+\fBgit clone --recursive\fR [<options>]
+Recursively checkout submodules when cloning a repository.
+.SH SETTING UP NEW SUBMODULES
 .TP
 tbd
 .SH FILE .gitmodules
