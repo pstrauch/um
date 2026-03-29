@@ -60,7 +60,8 @@ Example: /tmp/myapp/tempfile.txt
 
 [Resource](https://www.cyberciti.biz/faq/linux-unix-creating-a-manpage/)
 
-General path to man documents: `/usr/share/man/`. (e.g. man1 are default cl tools). Sample from cp:
+- man is based on the nroff/groff format. See [gnu manual](https://www.gnu.org/software/groff/manual/) for the syntax.
+- General path to man documents: `/usr/share/man/`. (e.g. man1 are default cl tools). Sample from cp:
 ```
 .TH CP "1" "September 2019" "GNU coreutils 8.30" "User Commands"
 .SH NAME
