@@ -94,7 +94,7 @@ fi
 # else, show manual entry (if it exists)
 file="${entry}.man"
 if [ -f "$DATA$file" ]; then
-    man -l "$DATA$file"
+    man "$DATA$file"
 else
   echo "No manual entry found for '$entry'."
   usage
