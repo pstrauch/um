@@ -1,0 +1,17 @@
+.TH git-init "Mar 2026" "Version 1.0" "User Commands"
+.SH NAME
+git init \- Initialize git in the current repository.
+.SH SYNOPSIS
+\fBgit init\fR
+.SH DESCRIPTION
+After initializing git, run the following steps to setup a new remote:
+.IP \(bu
+Make an initial commit.
+.IP \(bu
+Ensure the branch name is main.
+.br
+git branch -M main
+.IP \(bu
+Push the main branch to a new remote and configure the upstream.
+.br
+git push -u origin main

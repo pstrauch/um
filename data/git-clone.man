@@ -1,0 +1,9 @@
+.TH git-clone "Mar 2026" "Version 1.0" "User Commands"
+.SH NAME
+git clone \- Clone remote repositories and configure as upstream.
+.SH SYNOPSIS
+\fBgit clone\fR <url | ssh> [local_dir]
+.SH DESCRIPTION
+.TP
+\fBgit clone\fR <url | ssh> [local_dir]
+Clone the remote repository into the local directory.
