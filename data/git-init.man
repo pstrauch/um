@@ -12,6 +12,10 @@ Ensure the branch name is main.
 .br
 git branch -M main
 .IP \(bu
-Push the main branch to a new remote and configure the upstream.
+Add a remote.
+.br
+git remote add origin <url | ssh>
+.IP \(bu
+Push the main branch to the remote and configure the upstream.
 .br
 git push -u origin main
