@@ -2,13 +2,13 @@
 .SH NAME
 git branch \- Manage git branches
 .SH SYNOPSIS
-\fBgit branch\fR 
+\fBgit branch\fR [(-r | --remotes) | (-a | --all)]
 .br
-\fBgit branch <branchname>\fR 
+\fBgit branch\fR <branchname>
 .br
-\fBgit branch -m <oldbranch> <newbranch>\fR
+\fBgit branch\fR -m <oldbranch> <newbranch>
 .br
-\fBgit branch -d <branchname>\fR
+\fBgit branch\fR -d <branchname>
 .SH DESCRIPTION
 .TP
 \fBgit branch\fR 
@@ -16,11 +16,18 @@ List existing branches.
 .TP
 \fBgit branch <branchname>\fR 
 Create a new branch.
+.SH OPTIONS
 .TP
-\fBgit branch -m <oldbranch> <newbranch>\fR 
+\fB-a, --all\fR 
+List all branches (local and remote).
+.TP
+\fB-r, --remote\fR 
+List remote branches.
+.TP
+\fB-m <oldbranch> <newbranch>\fR 
 Rename/move a branch.
 .TP
-\fBgit branch -d <branchname>\fR
+\fB-d <branchname>\fR
 Delete a branch.
 .SH NOTES
 Further useful commands for managing branches:
