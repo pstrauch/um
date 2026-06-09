@@ -32,7 +32,7 @@ Delete a branch.
 .SH SEE ALSO
 Further useful commands for managing branches:
 .TP
-\fBgit checkout\fR -b <branchname>
+\fBgit checkout\fR -b <branchname> [commit | tag]
 Create and checkout a new branch.
 .TP
 \fBgit checkout\fR --track <remote>/<branchname>
