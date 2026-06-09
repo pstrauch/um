@@ -29,11 +29,17 @@ Rename/move a branch.
 .TP
 \fB-d <branchname>\fR
 Delete a branch.
-.SH NOTES
+.SH SEE ALSO
 Further useful commands for managing branches:
+.TP
+\fBgit checkout\fR -b <branchname>
+Create and checkout a new branch.
 .TP
 \fBgit checkout\fR --track <remote>/<branchname>
 Create a new branch according to a remote branch. The new branch automatically tracks the remote branch (see git remote show <remote>)
+.TP
+\fBgit push\fR -u <remote> <branchname>
+Push a new local branch to the remote (i.e. --set-upstream).
 .TP
 \fBgit push\fR -d <remote> <branchname>
 Delete a remote branch. The local branch can be deleted separately using the standard method.
