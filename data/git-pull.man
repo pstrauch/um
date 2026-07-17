@@ -1,0 +1,7 @@
+.TH git-pull "July 2026" "Version 1.0" "User Commands"
+.SH NAME
+git pull \- Fetch and merge upstream changes.
+.SH SYNOPSIS
+\fBgit pull\fR
+.br
+\fBgit pull\fR --rebase <remote> <branch>

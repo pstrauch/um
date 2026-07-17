@@ -29,3 +29,10 @@ xclip -sel clip < <path/to/ssh_pub_key>.pub
 Copy the contents of the public key to the clipboard
 .TP
 Note: If you don't use the default filename, you might have to add it to the ssh-agent or configure it in .ssh/config.
+.SH SSH Agent
+.TP
+eval "$(ssh-agent -s)"
+Start the ssh-agent in the background
+.TP
+ssh-add ~/.ssh/id_ed25519_
+Add a private key to the ssh-agent
